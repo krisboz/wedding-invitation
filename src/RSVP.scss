@@ -1,0 +1,127 @@
+.RSVP {
+    background: linear-gradient(135deg, #ebad6f, #9e5c1b);
+
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    gap: 1rem;
+    color: white;
+
+
+    svg {
+        font-size: 6rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+.form-container {
+    display: grid;
+    place-content: center;
+    padding: 1rem 0;
+}
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    gap: .5rem;
+    padding: 1.5rem 1rem;
+    background-color: white;
+
+
+    label {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+
+
+        input,
+        textarea {
+            padding: .3rem 1rem;
+            border-radius: 8px;
+            border: 1px solid grey;
+            width: 100%
+        }
+
+
+    }
+
+
+    .plus-one-label {
+        flex-direction: row;
+        text-wrap: nowrap;
+    }
+}
+
+.submit-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button {
+        background: linear-gradient(135deg, #e8a767, #81572d);
+        color: white;
+        border: none;
+        padding: .3rem .9rem;
+        width: 100%;
+        border-radius: 6px;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        &:hover {
+            background: linear-gradient(270deg, #e8a767, #81572d);
+
+        }
+    }
+}
+
+.success-info-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.document-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    transition: .3s ease-in-out;
+
+    svg {
+        font-size: .8rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        font-size: 4rem;
+        color: white;
+    }
+}

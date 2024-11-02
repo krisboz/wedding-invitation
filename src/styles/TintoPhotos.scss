@@ -1,0 +1,24 @@
+.images-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tinto-img {
+    height: 200px;
+    width: auto;
+    border-radius: 18px;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        filter: contrast(150%);
+        transform: scale(1.3);
+        position: relative;
+        z-index: 999;
+    }
+}
+
+.middle {
+    transform: translateY(10%);
+}
